@@ -1,0 +1,21 @@
+{
+	"name": "dimadin/better-serbian-search",
+	"description": "Better Serbian Search",
+	"homepage": "https://github.com/dimadin/better-serbian-search",
+	"type": "wordpress-plugin",
+	"license": "GPL",
+	"authors": [
+		{
+			"name": "Milan Dinić",
+			"email": "milan@srpski.biz",
+			"homepage": "http://blog.milandinic.com/"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0",
+		"dimadin/serbian-variants": "dev-master"
+	},
+	"autoload": {
+        "files": ["inc/class-better-serbian-search-query.php"]
+    }
+}
