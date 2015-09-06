@@ -70,7 +70,7 @@ class Better_Serbian_Search {
 		// Load translations
 		load_plugin_textdomain( 'better-serbian-search', false, dirname( $basename ) . '/languages' );
 
-		// Add new link
+		// Add new links
 		$links['donate']   = '<a href="http://blog.milandinic.com/donate/">' . __( 'Donate', 'better-serbian-search' ) . '</a>';
 		$links['wpdev']    = '<a href="http://blog.milandinic.com/wordpress/custom-development/">' . __( 'WordPress Developer', 'better-serbian-search' ) . '</a>';
 		$links['premiums'] = '<strong><a href="https://shop.milandinic.com/">' . __( 'Premium WordPress Plugins', 'better-serbian-search' ) . '</a></strong>';
