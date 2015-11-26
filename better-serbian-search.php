@@ -131,7 +131,7 @@ class Better_Serbian_Search {
 	/**
 	 * Generate SQL for the WHERE clause based on passed search terms.
 	 *
-	 * Based on WP_Query::parse_search().
+	 * Based on WP_Query::parse_search() in v4.3.1.
 	 *
 	 * @since 1.0
 	 * @access public
