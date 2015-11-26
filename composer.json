@@ -13,7 +13,7 @@
 	],
 	"require": {
 		"composer/installers": "~1.0",
-		"dimadin/serbian-variants": "dev-master"
+		"dimadin/serbian-variants": "1.0"
 	},
 	"autoload": {
         "files": ["inc/class-better-serbian-search-query.php"]
