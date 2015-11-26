@@ -11,7 +11,7 @@
 
 /**
  * Plugin Name: Better Serbian Search
- * Plugin URI:  http://blog.milandinic.com/wordpress/plugins/
+ * Plugin URI:  http://blog.milandinic.com/wordpress/plugins/better-serbian-search/
  * Description: Search all variants of word for Serbian language.
  * Author:      Milan Dinić
  * Author URI:  http://blog.milandinic.com/
