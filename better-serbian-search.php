@@ -15,7 +15,7 @@
  * Description: Search all variants of word for Serbian language.
  * Author:      Milan Dinić
  * Author URI:  http://blog.milandinic.com/
- * Version:     0.3
+ * Version:     1.0
  * Text Domain: better-serbian-search
  * Domain Path: /languages/
  * License:     GPL
