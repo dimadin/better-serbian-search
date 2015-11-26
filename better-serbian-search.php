@@ -42,40 +42,6 @@ class Better_Serbian_Search {
 	public function __construct() {
 		// Start our process as late as possible
 		add_action( 'wp_loaded', array( $this, 'start' ), 1, 999 );
-
-		// Register plugins action links filter
-		add_filter( 'plugin_action_links',               array( $this, 'action_links' ), 10, 2 );
-		add_filter( 'network_admin_plugin_action_links', array( $this, 'action_links' ), 10, 2 );
-	}
-
-	/**
-	 * Add action links to plugins page.
-	 *
-	 * @since 1.0
-	 * @access public
-	 *
-	 * @param array  $links       Existing plugin's action links.
-	 * @param string $plugin_file Path to the plugin file.
-	 * @return array $links New plugin's action links.
-	 */
-	public function action_links( $links, $plugin_file ) {
-		// Set basename
-		$basename = plugin_basename( __FILE__ );
-
-		// Check if it is for this plugin
-		if ( $basename != $plugin_file ) {
-			return $links;
-		}
-
-		// Load translations
-		load_plugin_textdomain( 'better-serbian-search', false, dirname( $basename ) . '/languages' );
-
-		// Add new links
-		$links['donate']   = '<a href="http://blog.milandinic.com/donate/">' . __( 'Donate', 'better-serbian-search' ) . '</a>';
-		$links['wpdev']    = '<a href="http://blog.milandinic.com/wordpress/custom-development/">' . __( 'WordPress Developer', 'better-serbian-search' ) . '</a>';
-		$links['premiums'] = '<strong><a href="https://shop.milandinic.com/">' . __( 'Premium WordPress Plugins', 'better-serbian-search' ) . '</a></strong>';
-
-		return $links;
 	}
 
 	/**
